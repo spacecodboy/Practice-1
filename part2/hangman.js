@@ -17,6 +17,12 @@ const canvasBuilder = () => {
     ctx.strokeStyle = "#000"
     ctx.lineWidth = 3
 
+    let img = new Image();
+    img.onload = function() {
+	    ctx.drawImage(img, 230, 20);
+        };
+    img.src = "/images/hi.jpg";
+
     function reset() {
         let ctx = canvas.getContext("2d"); 
         ctx.clearRect(0,0, canvas.width, canvas.height);
@@ -29,37 +35,53 @@ const canvasBuilder = () => {
 
     const drawScaffold = () => {
         reset()
-        drawLine(10, 130, 130, 130);
-        drawLine(10, 10, 10, 131);
-        drawLine(10, 10, 70, 10);
-        drawLine(70, 10, 70, 20);
-    }
-
-    const drawBody = () => {
-        drawLine(70, 40, 70, 80);
-    }
-
-    const drawLeftArm = () => {
-        drawLine(70, 50, 50, 70)
-    }
-
-    const drawRightArm = () => {
-        drawLine(70, 50, 90, 70)
-    }
-
-    const drawLeftLeg = () => {
-        drawLine(70, 80, 50, 110)
-    }
-
-    const drawRightLeg = () => {
-        drawLine(70, 80, 90, 110)
+        drawLine(10, 190, 130, 190); //down
+        drawLine(10, 180, 130, 180);
+        drawLine(130, 180, 130, 190);
+        drawLine(10, 10, 10, 191); //left
+        drawLine(20, 10, 20, 191);
+        drawLine(10, 10, 70, 10); //up
+        drawLine(10, 20, 70, 20); 
+        drawLine(70, 10, 70, 45);
     }
 
     const drawHead = () => {
         ctx.beginPath()
-        ctx.arc(70, 30, 10, 0, Math.PI * 2)
+        ctx.arc(70, 60, 15, 0, Math.PI * 2)
         ctx.stroke()
+        ctx.beginPath()
+        ctx.arc(65, 55, 1, 0, Math.PI * 2)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.arc(75, 55, 1, 0, Math.PI * 2)
+        ctx.stroke()
+        drawLine(65, 65, 75, 65);
     }
+
+    const drawBody = () => {
+        drawLine(70, 75, 70, 120);
+    }
+
+    const drawLeftArm = () => {
+        drawLine(70, 100, 50, 70)
+    }
+
+    const drawRightArm = () => {
+        drawLine(70, 100, 90, 70)
+    }
+
+    const drawLeftLeg = () => {
+        drawLine(70, 120, 50, 150)
+        drawLine(60, 51, 70, 60);
+        drawLine(68, 51, 79, 60);
+        drawLine(59, 60, 69, 51);
+        drawLine(69, 60, 79, 51);
+    }
+
+    const drawRightLeg = () => {
+        drawLine(70, 120, 90, 150)
+    }
+
     return { drawScaffold, drawHead, drawBody, drawLeftArm, drawRightArm, drawLeftLeg, drawRightLeg}
 }
 
@@ -132,6 +154,7 @@ const mainGame = () => {
                     hidWord.innerHTML = hiddenWord
                     winCount++
                     if (winCount == charArray.length) {
+                        
                         result.innerHTML = `<h2 class='win-msg'>Победа!</h2><p class='answer'>Загаданное слово <span>${selectedWord}</span></p>`
                     }
                   }
