@@ -9,7 +9,7 @@ let winCount = 0
 
 cities = ['Москва', 'Новосибирск', 'Екатеринбург', 'Казань', 'Челябинск', 'Самара', 'Уфа', 'Омск', 'Красноярск', 'Воронеж', 'Пермь', 'Волгоград', 'Краснодар', 'Тюмень', 'Саратов', 'Тольятти',
     'Ижевск', 'Барнаул', 'Ульяновск', 'Иркутск', 'Хабаровск', 'Махачкала', 'Владивосток', 'Ярославль', 'Оренбург', 'Томск', 'Кемерово', 'Новокузнецк', 'Рязань', 'Киров', 'Севастополь', 'Астрахань',
-    'Балашиха','Пенза','Калининград', 'Чебоксары', 'Липецк', 'Тула', 'Ставрополь', 'Курск', 'Сочи', 'Тверь', 'Магнитогорск', 'Иваново', 'Брянск']
+    'Балашиха','Пенза','Калининград', 'Чебоксары', 'Липецк', 'Тула', 'Ставрополь', 'Курск', 'Сочи', 'Тверь', 'Магнитогорск', 'Иваново', 'Брянск','Чита','Купино','Черепаново']
 
 const canvasBuilder = () => {
     let ctx = canvas.getContext("2d")
@@ -132,7 +132,7 @@ const mainGame = () => {
                     hidWord.innerHTML = hiddenWord
                     winCount++
                     if (winCount == charArray.length) {
-                        result.innerHTML = `<h2 class='win-msg'>Победа!!</h2><p class='answer'>Загаданное слово <span>${selectedWord}</span></p>`
+                        result.innerHTML = `<h2 class='win-msg'>Победа!</h2><p class='answer'>Загаданное слово <span>${selectedWord}</span></p>`
                     }
                   }
                 });
@@ -140,7 +140,7 @@ const mainGame = () => {
                 loseCount += 1;
                 rendering(loseCount);
                 if (loseCount == 6) {
-                    result.innerHTML = `<h2 class='lose-msg'>Проигрыш!!</h2><p class='answer'>Загаданное слово <span>${selectedWord}</span></p>`;
+                    result.innerHTML = `<h2 class='lose-msg'>Проигрыш!</h2><p class='answer'>Загаданное слово <span>${selectedWord}</span></p>`;
                 }
             }
             button.disabled = true
