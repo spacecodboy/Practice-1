@@ -1,0 +1,10 @@
+body{ 
+    background-color:pink; 
+    font-family: sans-serif; 
+} 
+h1 {
+    color: palevioletred;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px
+}
