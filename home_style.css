@@ -1,10 +1,70 @@
-body{ 
-    background-color:pink; 
-    font-family: sans-serif; 
-} 
-h1 {
-    color: palevioletred;
+.title{
+    background-color: #696969;
+    border-radius: 15px;
+    width: 300px;
+    height: 90px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.title h1{
+    color: #e6e6e6;
     font-weight: bold;
-    font-style: italic;
-    font-size: 50px
+    font-size: 32px;
+    text-align: center;
+    font-family: "Tahoma", sans-serif;
+    padding: 0.8em;
+}
+
+.description{
+    border: 3px solid ;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 1500px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.description h2{
+    color: #696969;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: "Courier New", monospace;
+    text-align: center;
+    padding:2%;
+    padding: 0.1em;
+    margin: 0.1em;
+}
+ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ul li{
+    font-size: 40px;
+    color: #696969;
+    display: inline-block;
+    width: 1500px;
+    height: 80px;
+    text-align: center;
+}
+.sort {
+    color: #696969;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Courier New", monospace;
+    padding:1%;
+}
+
+.game {
+    color: #696969;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Courier New", monospace;
+    padding:1%;
 }
