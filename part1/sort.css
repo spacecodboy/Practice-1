@@ -1,4 +1,100 @@
-body{
-    background-color:pink; 
-            font-family: sans-serif; 
+*{
+    font-family: "Courier New", monospace;
+}
+.title{
+    background-color: #696969;
+    border-radius: 15px;
+    width: 300px;
+    height: 90px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.title h1{
+    color: #e6e6e6;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    padding: 0.8em;
+}
+
+.description{
+    border: 3px solid #696969;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 1500px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.description h2{
+    color: #696969;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    padding:2%;
+    padding: 0.1em;
+    margin: 0.1em;
+}
+.task {
+    border: 3px solid #696969;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    padding: 0.5em;
+}
+
+.task button {
+    font-size: 24px;
+    padding: 0.5em;
+    font-weight: bold;
+    color: #696969;
+    border: #696969 solid;
+    border-radius: 15px;
+}
+
+.task p {
+    font-size: 25px;
+    padding: 0.05em;
+    margin: 0.5em;
+    font-weight: bold;
+    color: #696969;
+    word-break:break-all;
+}
+
+#string{
+    width: 300px;
+    height: 46px;
+    
+}
+
+.back {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    bottom: 40%;
+    transform: translateX(-50%);
+    color: #696969;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.strbut {
+    box-sizing: content-box;
+}
+
+input[type="text"]
+{
+    font-size:25px;
+    color: #696969;
+    border: #696969 solid;
+    border-radius: 15px;
+    font-weight: bold;
 }

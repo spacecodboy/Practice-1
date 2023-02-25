@@ -3,23 +3,30 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8"> 
-    <title>Часть 1</title> 
+    <title>Сортировка выбором</title> 
     <link rel="shortcut icon" href="/images/death.ico"> 
+    <link rel="stylesheet" href="sort.css">
      
 </head> 
- 
-<body> 
-    <h1> Задание 11. Сортировка выбором символов в строке. Вернуть порядковый номер в строке на текущий и на минимальный символы. </h1>
-     <p>Введите строку для сортировки: </p> 
-      
-     <input id="string" type="text"> 
-      
-    <button type="sort_button" onclick="SortSelection()">Сортировать</button> 
-      
-     <p id="result"></p> 
-      
-     <script src="sort.js"></script> 
-    <a href="/index.html">Вернуться на главную страницу</a>
-</body> 
- 
+<body style="background-image: url(/images/folk-pattern.webp);">
+    <div class="title">
+        <h1>Задание 11</h1>
+    </div>
+    <br>
+    <div class="description">
+        <h2>Сортировка выбором символов в строке. Вернуть порядковый номер в строке на текущий и на минимальный символы.</h2>
+    </div>
+    <br>
+    <div class="task">
+        <p> Введите строку</p>
+        <div class="strbut">
+        <input id="string" type="text"> 
+        <button type="sort_button" onclick="SortSelection()">Сортировать</button> 
+        </div>
+        <p>Отсортированная строка:</p>
+        <p id="result"></p> 
+    </div>
+    <div class="back"><a href="/index.html">Вернуться на главную страницу</a></div>
+    <script src="sort.js"></script>
+</body>
 </html>
