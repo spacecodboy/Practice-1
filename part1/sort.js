@@ -20,4 +20,5 @@ let lenArray = currArray.length
     }
     document.getElementById("result").innerHTML = currArray.join('');
     console.log(currArray.join(''))
+    document.getElementById("string").value = ""
 }

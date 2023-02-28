@@ -33,7 +33,7 @@
     margin: auto;
 }
 .description h2{
-    color: #696969;
+    color: #525252;
     font-weight: bold;
     font-size: 32px;
     text-align: center;
@@ -48,21 +48,21 @@ ul {
 }
 ul li{
     font-size: 40px;
-    color: #696969;
+    color: #525252;
     display: inline-block;
     width: 1500px;
     height: 80px;
     text-align: center;
 }
 .sort {
-    color: #696969;
+    color: #525252;
     font-weight: bold;
     font-size: 40px;
     padding:1%;
 }
 
 .game {
-    color: #696969;
+    color: #525252;
     font-weight: bold;
     font-size: 40px;
     padding:1%;

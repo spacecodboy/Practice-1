@@ -80,13 +80,6 @@
     border-radius: 0.7em;
   }
   
-  .win-msg {
-    color: #0e921f;
-  }
-  .lose-msg {
-    color: #e71a1a;
-  }
-
   #result p {
     font-size: 1.30em;
     margin: 0.5em 0 0.5em 0;
@@ -105,4 +98,11 @@
     color: #696969;
     font-size: 20px;
     font-weight: bold;
+}
+
+.win_msg {
+  color: #0e921f;
+}
+.lose_msg {
+  color: #e71a1a;
 }
